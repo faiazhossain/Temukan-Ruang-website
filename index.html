@@ -12,7 +12,7 @@
     <header class="lg:my-10 bg-emerald-50 md:bg-white">
       <!-- Navbar Starts -->
       <nav
-        class="w-auto ml-2 sm:flex sm:flex-col sm:items-center lg:w-9/12 md:mx-auto md:grid md:grid-cols-12"
+        class="w-auto ml-2 sm:flex sm:flex-col sm:items-center md:mx-auto md:grid md:grid-cols-12 md:my-8 lg:w-9/12"
       >
         <!-- logo -->
         <div
@@ -47,28 +47,30 @@
 
     <main>
       <section class="md:mt-4">
-        <!-- image section  -->
-        <div class="relative">
-          <div class="absolute z-10 top-8 sm:top-24 sm:ml-8">
-            <h1 class="text-2xl font-bold">Temukan Ruang</h1>
-            <h1 class="text-2xl font-bold">Kerja Dimanapun</h1>
-            <div class="flex bg-white rounded-xl p-4 space-x-2 mt-6">
-              <div>
-                <p class="text-xs font-light">Temukan Ruang kerja di</p>
-                <h2>Jakarta</h2>
+        <!-- main header section -->
+
+        <div class="header-part">
+          <div class="title-container">
+            <!-- main header title  -->
+            <h1 class="main-title">
+              Temukan Ruang <br />
+              Kerja Dimanapun
+            </h1>
+            <!-- main header card  -->
+            <div class="title-card shadow-lg">
+              <div class="title-card-left">
+                <p class="title-card-paragraph">Temukan ruang kerja di</p>
+                <h1 class="title-card-heading">Jakarta</h1>
               </div>
-              <button class="bg-orange-500 text-white px-2 rounded-md">
-                Cari Sekarang
-              </button>
+              <div class="title-card-button">
+                <button>Cari Sekarang</button>
+              </div>
             </div>
           </div>
-          <img
-            class="absolute left-52 top-44"
-            src="images/pattern.png"
-            alt=""
-          />
-          <img class="rounded-lg" src="images/girl pic.png" alt="" />
-          <img class="hidden" src="images/side pic.png.jpg" alt="" />
+          <img class="first-image" src="images/pattern.png" alt="" />
+
+          <img class="second-image" src="images/girl pic.png" alt="" />
+          <img class="third-image" src="images/side pic.png.jpg" alt="" />
         </div>
       </section>
     </main>

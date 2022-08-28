@@ -1,8 +1,169 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 /* font-family: 'Mulish', sans-serif; */
+* {
+  font-family: "Mulish", sans-serif;
+}
 nav {
   font-family: "Mulish", sans-serif;
 }
 #logo {
   background-color: #1ea59a;
+}
+
+/* for smaller device less than 361px */
+@media only screen and (max-width: 639px) {
+  .header-part {
+    position: relative;
+  }
+  .main-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 16px;
+    position: absolute;
+    top: 6rem;
+  }
+  .title-card {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: 11rem;
+  }
+  .title-card-paragraph {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+  .title-card-heading {
+    font-weight: bold;
+  }
+  .title-card-button {
+    background-color: #fe753e;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+  .first-image {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
+  .third-image {
+    display: none;
+  }
+}
+/* for smaller device in between 640px and 768px */
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .header-part {
+    position: relative;
+  }
+  .main-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 16px;
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+  }
+  .title-card {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: 14rem;
+    left: 4rem;
+    z-index: 1;
+  }
+  .title-card-paragraph {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+  .title-card-heading {
+    font-weight: bold;
+  }
+  .title-card-button {
+    background-color: #fe753e;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+  .first-image {
+    position: absolute;
+    top: 18rem;
+    left: 13rem;
+    width: 4rem;
+  }
+  .third-image {
+    display: none;
+  }
+}
+/* for larger device in between 769px and  1024px*/
+
+@media only screen and (min-width: 769px) {
+  .header-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  .main-title {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-top: 16px;
+    position: absolute;
+    left: 14%;
+    top: 15%;
+  }
+  .title-card {
+    background-color: white;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    z-index: 1;
+  }
+  .title-card-paragraph {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+  .title-card-heading {
+    font-weight: bold;
+  }
+  .title-card-button {
+    background-color: #fe753e;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+  .first-image {
+    top: 18rem;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 58%;
+    left: 12%;
+  }
+  .second-image {
+    top: 18rem;
+    left: 13rem;
+    width: 60%;
+    height: 70vh;
+    border-radius: 16px;
+    margin-left: 300px;
+  }
+  .third-image {
+    top: 18rem;
+    left: 13rem;
+    width: 4rem;
+    height: 70vh;
+    margin-left: 20px;
+    border-radius: 16px;
+  }
 }
